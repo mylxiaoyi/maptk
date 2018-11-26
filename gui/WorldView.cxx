@@ -88,11 +88,11 @@
 #include <qtIndexRange.h>
 #include <qtMath.h>
 
-#include <QtGui/QMenu>
-#include <QtGui/QToolButton>
-#include <QtGui/QWidgetAction>
+#include <QMenu>
+#include <QToolButton>
+#include <QWidgetAction>
 
-#include <QtCore/QDebug>
+#include <QDebug>
 
 #include <QFileInfo>
 

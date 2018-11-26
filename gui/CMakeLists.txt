@@ -1,5 +1,5 @@
-find_package(Qt4 4.8 REQUIRED)
-include(${QT_USE_FILE})
+find_package(Qt5 REQUIRED COMPONENTS Widgets Xml)
+include_directories(${Q5_INCLUDE_DIRS})
 
 find_package(qtExtensions REQUIRED)
 include(${qtExtensions_USE_FILE})
@@ -155,9 +155,9 @@ configure_file(
   "${CMAKE_CURRENT_BINARY_DIR}/appdata.qrc"
 )
 
-qt4_wrap_ui(gui_ui_sources ${gui_ui})
-qt4_wrap_cpp(gui_moc_sources ${gui_moc_headers})
-qt4_add_resources(gui_res_sources ${gui_resources})
+qt5_wrap_ui(gui_ui_sources ${gui_ui})
+qt5_wrap_cpp(gui_moc_sources ${gui_moc_headers})
+qt5_add_resources(gui_res_sources ${gui_resources})
 
 qte_amc_wrap_ui(gui_amc_sources ActionManagerDialog ${gui_am_ui})
 
